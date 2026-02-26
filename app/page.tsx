@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import QRCode from 'qrcode'
+import RelatedTools from '@/components/RelatedTools'
 
 export default function Home() {
   const [text, setText] = useState('')
@@ -275,6 +276,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Related Tools */}
+        <RelatedTools currentTool="qr-code-generator" className="mt-12" />
 
         {/* Footer */}
         <footer className="mt-12 text-center text-gray-600">
